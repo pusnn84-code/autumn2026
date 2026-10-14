@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2026 가을빛축제 | 당신을 초대합니다</title>
-<meta name="description" content="10월 25일 주일, 삼덕교회 2026 가을빛축제에 당신을 초대합니다.">
+<meta name="description" content="10월 25일 삼덕교회로 초대합니다.">
 <meta property="og:title" content="2026 가을빛축제">
-<meta property="og:description" content="10월 25일 주일 · 삼덕교회 · 당신을 초대합니다">
-<meta property="og:image" content="https://pusnn84-code.github.io/autumn2026/123.jpg">
+<meta property="og:description" content="10월 25일 삼덕교회로 초대합니다.">
+<meta property="og:image" content="https://pusnn84-code.github.io/autumn2026/2345.jpg">
 <meta property="og:url" content="https://pusnn84-code.github.io/autumn2026/">
 <meta property="og:type" content="website">
 <style>
@@ -33,7 +33,7 @@ html,body{margin:0;padding:0;background:#f5ead7;}
 <script>
 const invitationUrl='https://pusnn84-code.github.io/autumn2026/';
 const invitationTitle='2026 가을빛축제';
-const invitationText='10월 25일 주일 · 삼덕교회 · 당신을 초대합니다';
+const invitationText='10월 25일 삼덕교회로 초대합니다.';
 if(window.Kakao && !Kakao.isInitialized()) Kakao.init('af0e7ae3c1ccaab67503d0dc2a108cd2');
 function statusMessage(text){document.getElementById('share-status').textContent=text;}
 async function shareInvitation(){
@@ -48,7 +48,7 @@ function shareKakao(){
   if(!window.Kakao || !Kakao.isInitialized()){statusMessage('카카오톡 공유를 불러오지 못했습니다. 공유하기 버튼으로 주소를 공유해 주세요.');return;}
   try{Kakao.Share.sendDefault({
     objectType:'feed',
-    content:{title:invitationTitle,description:invitationText,imageUrl:'https://pusnn84-code.github.io/autumn2026/123.jpg',link:{mobileWebUrl:invitationUrl,webUrl:invitationUrl}},
+    content:{title:invitationTitle,description:invitationText,imageUrl:'https://pusnn84-code.github.io/autumn2026/2345.jpg',imageWidth:559,imageHeight:559,link:{mobileWebUrl:invitationUrl,webUrl:invitationUrl}},
     buttons:[{title:'초대장 보기',link:{mobileWebUrl:invitationUrl,webUrl:invitationUrl}}]
   });}
   catch(error){statusMessage('카카오톡 공유를 열지 못했습니다. 공유하기 버튼으로 주소를 공유해 주세요.');}
