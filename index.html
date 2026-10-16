@@ -14,20 +14,26 @@
 html,body{margin:0;padding:0;background:#f5ead7;}
 .invitation{position:relative;width:100%;max-width:600px;margin:0 auto;}
 .invitation img{display:block;width:100%;height:auto;}
-.share-button{position:absolute;bottom:2%;height:1.6%;border:0;padding:0;background:transparent;cursor:pointer;z-index:10;border-radius:14px;}
+.share-button{position:absolute;bottom:1.6%;height:1.3%;border:0;padding:0;background:transparent;cursor:pointer;z-index:10;border-radius:14px;}
 .general-share{left:26.5%;width:33%;}
 .kakao-share{left:60.5%;width:12%;}
 .share-button:focus-visible{outline:3px solid #49300e;outline-offset:3px;}
 #share-status{text-align:center;margin:0;padding:0 16px;color:#68451c;font:16px sans-serif;}
 #share-status:not(:empty){padding:16px;}
+.parking-save{position:absolute;left:5%;top:76.6%;width:90%;height:1.9%;z-index:10;border-radius:999px;}
+.parking-save:focus-visible{outline:3px solid #49300e;outline-offset:3px;}
+.save-help{max-width:568px;margin:0 auto;padding:16px;text-align:center;color:#68451c;font:14px/1.6 sans-serif;}
+.save-help a{color:#12314f;}
 </style>
 </head>
 <body>
 <main class="invitation">
-<img src="/autumn2026/abc.jpg?v=f64327a" width="759" height="5400" alt="2026 가을빛축제 초대장. 10월 25일 주일, 삼덕교회. 대구광역시 중구 공평로4길 11. 주일예배 오전 7:30, 9:30, 11:30. 문의 053.430.9191.">
+<img src="/autumn2026/DEF.jpg" width="759" height="6750" alt="2026 가을빛축제 초대장. 10월 25일 주일, 삼덕교회. 대구광역시 중구 공평로4길 11. 주일예배 오전 7:30, 9:30, 11:30. 문의 053.430.9191.">
+<a class="parking-save" href="/autumn2026/parking.png" download="가을빛축제-주차안내.png" aria-label="주차 안내 이미지만 저장하기" onclick="statusMessage('주차 안내 이미지 저장을 시작했습니다. 사진 앱에 저장하려면 아래 ‘주차 안내 이미지만 열기’를 누른 뒤 이미지를 길게 눌러 저장해 주세요.')"></a>
 <button class="share-button general-share" type="button" onclick="shareInvitation()" aria-label="초대장 공유하기"></button>
 <button class="share-button kakao-share" type="button" onclick="shareKakao()" aria-label="카카오톡으로 초대장 공유하기"></button>
 </main>
+<p class="save-help"><a href="/autumn2026/parking.png" target="_blank" rel="noopener">주차 안내 이미지만 열기</a><br>사진 앱에 저장하려면 이미지를 연 뒤 길게 눌러 저장해 주세요.</p>
 <p id="share-status" role="status" aria-live="polite"></p>
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.8.3/kakao.min.js"></script>
 <script>
